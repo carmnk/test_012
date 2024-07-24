@@ -9,10 +9,5 @@ const homepage = pjson.homepage
 export default defineConfig({
   plugins: [(react as any)()],
   target: 'esnext',
-  build: {
-    rollupOptions: {
-      external: ['@cmk/fe_utils'],
-    },
-  },
   base: homepage,
 } as any)
